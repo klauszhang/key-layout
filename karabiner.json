@@ -3897,6 +3897,29 @@
             ]
           },
           {
+            "description": "f1 = 1 + fn",
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": {
+                  "modifiers": {
+                    "mandatory": [
+                      "fn"
+                    ]
+                  },
+                  "key_code": "1"
+                },
+                "to": [
+                  {
+                    "repeat": true,
+                    "key_code": "f1",
+                    "modifiers": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
             "description": "f2 = 2 + fn",
             "manipulators": [
               {
@@ -3914,6 +3937,339 @@
                     "repeat": true,
                     "key_code": "f2",
                     "modifiers": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "f3 = 3 + fn",
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": {
+                  "modifiers": {
+                    "mandatory": [
+                      "fn"
+                    ]
+                  },
+                  "key_code": "3"
+                },
+                "to": [
+                  {
+                    "repeat": true,
+                    "key_code": "f3",
+                    "modifiers": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "f4 = 4 + fn",
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": {
+                  "modifiers": {
+                    "mandatory": [
+                      "fn"
+                    ]
+                  },
+                  "key_code": "4"
+                },
+                "to": [
+                  {
+                    "repeat": true,
+                    "key_code": "f4",
+                    "modifiers": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "f5 = 5 + fn",
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": {
+                  "modifiers": {
+                    "mandatory": [
+                      "fn"
+                    ]
+                  },
+                  "key_code": "5"
+                },
+                "to": [
+                  {
+                    "repeat": true,
+                    "key_code": "f5",
+                    "modifiers": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "f6 = 6 + fn",
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": {
+                  "modifiers": {
+                    "mandatory": [
+                      "fn"
+                    ]
+                  },
+                  "key_code": "6"
+                },
+                "to": [
+                  {
+                    "repeat": true,
+                    "key_code": "f6",
+                    "modifiers": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "f7 = 7 + fn",
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": {
+                  "modifiers": {
+                    "mandatory": [
+                      "fn"
+                    ]
+                  },
+                  "key_code": "7"
+                },
+                "to": [
+                  {
+                    "repeat": true,
+                    "key_code": "f7",
+                    "modifiers": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "f8 = 8 + fn",
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": {
+                  "modifiers": {
+                    "mandatory": [
+                      "fn"
+                    ]
+                  },
+                  "key_code": "8"
+                },
+                "to": [
+                  {
+                    "repeat": true,
+                    "key_code": "f8",
+                    "modifiers": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "f9 = 9 + fn",
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": {
+                  "modifiers": {
+                    "mandatory": [
+                      "fn"
+                    ]
+                  },
+                  "key_code": "9"
+                },
+                "to": [
+                  {
+                    "repeat": true,
+                    "key_code": "f9",
+                    "modifiers": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "f10 = 0 + fn",
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": {
+                  "modifiers": {
+                    "mandatory": [
+                      "fn"
+                    ]
+                  },
+                  "key_code": "0"
+                },
+                "to": [
+                  {
+                    "repeat": true,
+                    "key_code": "f10",
+                    "modifiers": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "f11 = - + fn",
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": {
+                  "modifiers": {
+                    "mandatory": [
+                      "fn"
+                    ]
+                  },
+                  "key_code": "-"
+                },
+                "to": [
+                  {
+                    "repeat": true,
+                    "key_code": "f11",
+                    "modifiers": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "f12 = = + fn",
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": {
+                  "modifiers": {
+                    "mandatory": [
+                      "fn"
+                    ]
+                  },
+                  "key_code": "="
+                },
+                "to": [
+                  {
+                    "repeat": true,
+                    "key_code": "f12",
+                    "modifiers": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "grave_accent_and_tilde = escape + fn",
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": {
+                  "modifiers": {
+                    "mandatory": [
+                      "fn"
+                    ]
+                  },
+                  "key_code": "escape"
+                },
+                "to": [
+                  {
+                    "repeat": true,
+                    "key_code": "grave_accent_and_tilde",
+                    "modifiers": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "grave_accent_and_tilde + right_shift = escape + fn + right_shift",
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": {
+                  "modifiers": {
+                    "mandatory": [
+                      "fn",
+                      "right_shift"
+                    ]
+                  },
+                  "key_code": "escape"
+                },
+                "to": [
+                  {
+                    "repeat": true,
+                    "key_code": "grave_accent_and_tilde",
+                    "modifiers": [
+                      "right_shift"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "grave_accent_and_tilde + right_shift + left_shift = escape + fn + right_shift + left_shift",
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": {
+                  "modifiers": {
+                    "mandatory": [
+                      "fn",
+                      "right_shift",
+                      "left_shift"
+                    ]
+                  },
+                  "key_code": "escape"
+                },
+                "to": [
+                  {
+                    "repeat": true,
+                    "key_code": "grave_accent_and_tilde",
+                    "modifiers": [
+                      "right_shift",
+                      "left_shift"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "grave_accent_and_tilde + left_shift = escape + fn + left_shift",
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": {
+                  "modifiers": {
+                    "mandatory": [
+                      "fn",
+                      "left_shift"
+                    ]
+                  },
+                  "key_code": "escape"
+                },
+                "to": [
+                  {
+                    "repeat": true,
+                    "key_code": "grave_accent_and_tilde",
+                    "modifiers": [
+                      "left_shift"
+                    ]
                   }
                 ]
               }

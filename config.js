@@ -12,7 +12,22 @@ const cursorKeys = [
   ['comma', 'end'],
 ]
 
-const functionKeys = [['2', 'f2']]
+const functionKeys = [
+  ['1', 'f1'],
+  ['2', 'f2'],
+  ['3', 'f3'],
+  ['4', 'f4'],
+  ['5', 'f5'],
+  ['6', 'f6'],
+  ['7', 'f7'],
+  ['8', 'f8'],
+  ['9', 'f9'],
+  ['0', 'f10'],
+  ['-', 'f11'],
+  ['=', 'f12'],
+]
+
+const inputKeys = [['escape', 'grave_accent_and_tilde']]
 
 const editKeys = [['delete_or_backspace', 'delete_forward']]
 
@@ -51,14 +66,6 @@ function bindPermutationModifier(keyMap, fromModifier, toModifiers) {
     .flat()
 }
 
-// console.log(
-//   JSON.stringify(
-//     bindPermutationModifier(arrowKeys, 'fn', ['left_shift', 'left_option']),
-//     null,
-//     1
-//   )
-// )
-
 const complexModification = [
   // arrow keys
   ...bindModifier(arrowKeys, 'fn'),
@@ -81,12 +88,9 @@ const complexModification = [
   // function keys
   ...bindModifier(functionKeys, 'fn'),
 
-  // others
-
-  // ['caps_lock', ['left_option']],
-  // ['left_control', ['fn']],
-  // ['left_option', ['left_control']],
-  // ['right_command', ['fn']]
+  // input keys
+  ...bindModifier(inputKeys, 'fn'),
+  ...bindPermutationModifier(inputKeys, 'fn', ['right_shift', 'left_shift']),
 ]
 
 const fn = {
