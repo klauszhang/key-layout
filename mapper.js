@@ -1,26 +1,42 @@
-const { config } = require("./config");
-const fs = require("fs");
-const path = require("path");
+const { complexModification, simpleModifications } = require('./config')
+const fs = require('fs')
+const path = require('path')
 
-const title = "Hao_s key mapping";
+const complexRules = complexModification.map(getRule)
+const homedir = require('os').homedir()
+const karabinerConfigPath = path.join(
+  homedir,
+  '.config/karabiner/karabiner.json'
+)
 
-const output = { title, rules: config.map(getRule) };
+const karabinerConfig = require(karabinerConfigPath)
+
+karabinerConfig.profiles[0].complex_modifications.rules = complexRules
+
+// get device
+karabinerConfig.profiles[0].devices.filter((d) => {
+  const { identifiers } = d
+  return identifiers.product_id === 591 && identifiers.vendor_id === 1452
+})[0].simple_modifications = simpleModifications
+
+fs.writeFileSync(karabinerConfigPath, JSON.stringify(karabinerConfig, null, 2))
 
 fs.writeFileSync(
-  path.resolve(__dirname, "./output.json"),
-  JSON.stringify(output, null, 2)
-);
+  path.resolve(__dirname, 'karabiner.json'),
+  JSON.stringify(karabinerConfig, null, 2)
+)
 
-function getRule([key, to, ...modifiers]) {
+function getRule([key, to, modifiers]) {
+  const [toKeyCode, ...toModifiers] = to
   return {
-    description: `${to} = ${key}${
-      modifiers.length ? ` + ${modifiers.join(" + ")}` : ""
+    description: `${to.join(' + ')} = ${key}${
+      modifiers ? ` + ${modifiers.join(' + ')}` : ''
     }`,
     manipulators: [
       {
-        type: "basic",
+        type: 'basic',
         from: {
-          modifiers: modifiers.length
+          modifiers: modifiers
             ? {
                 mandatory: modifiers,
               }
@@ -30,10 +46,11 @@ function getRule([key, to, ...modifiers]) {
         to: [
           {
             repeat: true,
-            key_code: to,
+            key_code: toKeyCode,
+            modifiers: toModifiers,
           },
         ],
       },
     ],
-  };
+  }
 }

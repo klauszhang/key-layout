@@ -1,0 +1,4141 @@
+{
+  "global": {
+    "check_for_updates_on_startup": true,
+    "show_in_menu_bar": true,
+    "show_profile_name_in_menu_bar": false
+  },
+  "profiles": [
+    {
+      "complex_modifications": {
+        "parameters": {
+          "basic.simultaneous_threshold_milliseconds": 50,
+          "basic.to_delayed_action_delay_milliseconds": 500,
+          "basic.to_if_alone_timeout_milliseconds": 1000,
+          "basic.to_if_held_down_threshold_milliseconds": 500,
+          "mouse_motion_to_scroll.speed": 100
+        },
+        "rules": [
+          {
+            "description": "up_arrow = w + fn",
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": {
+                  "modifiers": {
+                    "mandatory": [
+                      "fn"
+                    ]
+                  },
+                  "key_code": "w"
+                },
+                "to": [
+                  {
+                    "repeat": true,
+                    "key_code": "up_arrow",
+                    "modifiers": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "down_arrow = s + fn",
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": {
+                  "modifiers": {
+                    "mandatory": [
+                      "fn"
+                    ]
+                  },
+                  "key_code": "s"
+                },
+                "to": [
+                  {
+                    "repeat": true,
+                    "key_code": "down_arrow",
+                    "modifiers": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "left_arrow = a + fn",
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": {
+                  "modifiers": {
+                    "mandatory": [
+                      "fn"
+                    ]
+                  },
+                  "key_code": "a"
+                },
+                "to": [
+                  {
+                    "repeat": true,
+                    "key_code": "left_arrow",
+                    "modifiers": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "right_arrow = d + fn",
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": {
+                  "modifiers": {
+                    "mandatory": [
+                      "fn"
+                    ]
+                  },
+                  "key_code": "d"
+                },
+                "to": [
+                  {
+                    "repeat": true,
+                    "key_code": "right_arrow",
+                    "modifiers": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "up_arrow + right_shift = w + fn + right_shift",
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": {
+                  "modifiers": {
+                    "mandatory": [
+                      "fn",
+                      "right_shift"
+                    ]
+                  },
+                  "key_code": "w"
+                },
+                "to": [
+                  {
+                    "repeat": true,
+                    "key_code": "up_arrow",
+                    "modifiers": [
+                      "right_shift"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "down_arrow + right_shift = s + fn + right_shift",
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": {
+                  "modifiers": {
+                    "mandatory": [
+                      "fn",
+                      "right_shift"
+                    ]
+                  },
+                  "key_code": "s"
+                },
+                "to": [
+                  {
+                    "repeat": true,
+                    "key_code": "down_arrow",
+                    "modifiers": [
+                      "right_shift"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "left_arrow + right_shift = a + fn + right_shift",
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": {
+                  "modifiers": {
+                    "mandatory": [
+                      "fn",
+                      "right_shift"
+                    ]
+                  },
+                  "key_code": "a"
+                },
+                "to": [
+                  {
+                    "repeat": true,
+                    "key_code": "left_arrow",
+                    "modifiers": [
+                      "right_shift"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "right_arrow + right_shift = d + fn + right_shift",
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": {
+                  "modifiers": {
+                    "mandatory": [
+                      "fn",
+                      "right_shift"
+                    ]
+                  },
+                  "key_code": "d"
+                },
+                "to": [
+                  {
+                    "repeat": true,
+                    "key_code": "right_arrow",
+                    "modifiers": [
+                      "right_shift"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "up_arrow + right_shift + left_shift = w + fn + right_shift + left_shift",
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": {
+                  "modifiers": {
+                    "mandatory": [
+                      "fn",
+                      "right_shift",
+                      "left_shift"
+                    ]
+                  },
+                  "key_code": "w"
+                },
+                "to": [
+                  {
+                    "repeat": true,
+                    "key_code": "up_arrow",
+                    "modifiers": [
+                      "right_shift",
+                      "left_shift"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "down_arrow + right_shift + left_shift = s + fn + right_shift + left_shift",
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": {
+                  "modifiers": {
+                    "mandatory": [
+                      "fn",
+                      "right_shift",
+                      "left_shift"
+                    ]
+                  },
+                  "key_code": "s"
+                },
+                "to": [
+                  {
+                    "repeat": true,
+                    "key_code": "down_arrow",
+                    "modifiers": [
+                      "right_shift",
+                      "left_shift"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "left_arrow + right_shift + left_shift = a + fn + right_shift + left_shift",
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": {
+                  "modifiers": {
+                    "mandatory": [
+                      "fn",
+                      "right_shift",
+                      "left_shift"
+                    ]
+                  },
+                  "key_code": "a"
+                },
+                "to": [
+                  {
+                    "repeat": true,
+                    "key_code": "left_arrow",
+                    "modifiers": [
+                      "right_shift",
+                      "left_shift"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "right_arrow + right_shift + left_shift = d + fn + right_shift + left_shift",
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": {
+                  "modifiers": {
+                    "mandatory": [
+                      "fn",
+                      "right_shift",
+                      "left_shift"
+                    ]
+                  },
+                  "key_code": "d"
+                },
+                "to": [
+                  {
+                    "repeat": true,
+                    "key_code": "right_arrow",
+                    "modifiers": [
+                      "right_shift",
+                      "left_shift"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "up_arrow + right_shift + left_shift + left_option = w + fn + right_shift + left_shift + left_option",
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": {
+                  "modifiers": {
+                    "mandatory": [
+                      "fn",
+                      "right_shift",
+                      "left_shift",
+                      "left_option"
+                    ]
+                  },
+                  "key_code": "w"
+                },
+                "to": [
+                  {
+                    "repeat": true,
+                    "key_code": "up_arrow",
+                    "modifiers": [
+                      "right_shift",
+                      "left_shift",
+                      "left_option"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "down_arrow + right_shift + left_shift + left_option = s + fn + right_shift + left_shift + left_option",
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": {
+                  "modifiers": {
+                    "mandatory": [
+                      "fn",
+                      "right_shift",
+                      "left_shift",
+                      "left_option"
+                    ]
+                  },
+                  "key_code": "s"
+                },
+                "to": [
+                  {
+                    "repeat": true,
+                    "key_code": "down_arrow",
+                    "modifiers": [
+                      "right_shift",
+                      "left_shift",
+                      "left_option"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "left_arrow + right_shift + left_shift + left_option = a + fn + right_shift + left_shift + left_option",
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": {
+                  "modifiers": {
+                    "mandatory": [
+                      "fn",
+                      "right_shift",
+                      "left_shift",
+                      "left_option"
+                    ]
+                  },
+                  "key_code": "a"
+                },
+                "to": [
+                  {
+                    "repeat": true,
+                    "key_code": "left_arrow",
+                    "modifiers": [
+                      "right_shift",
+                      "left_shift",
+                      "left_option"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "right_arrow + right_shift + left_shift + left_option = d + fn + right_shift + left_shift + left_option",
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": {
+                  "modifiers": {
+                    "mandatory": [
+                      "fn",
+                      "right_shift",
+                      "left_shift",
+                      "left_option"
+                    ]
+                  },
+                  "key_code": "d"
+                },
+                "to": [
+                  {
+                    "repeat": true,
+                    "key_code": "right_arrow",
+                    "modifiers": [
+                      "right_shift",
+                      "left_shift",
+                      "left_option"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "up_arrow + right_shift + left_shift + left_option + left_control = w + fn + right_shift + left_shift + left_option + left_control",
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": {
+                  "modifiers": {
+                    "mandatory": [
+                      "fn",
+                      "right_shift",
+                      "left_shift",
+                      "left_option",
+                      "left_control"
+                    ]
+                  },
+                  "key_code": "w"
+                },
+                "to": [
+                  {
+                    "repeat": true,
+                    "key_code": "up_arrow",
+                    "modifiers": [
+                      "right_shift",
+                      "left_shift",
+                      "left_option",
+                      "left_control"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "down_arrow + right_shift + left_shift + left_option + left_control = s + fn + right_shift + left_shift + left_option + left_control",
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": {
+                  "modifiers": {
+                    "mandatory": [
+                      "fn",
+                      "right_shift",
+                      "left_shift",
+                      "left_option",
+                      "left_control"
+                    ]
+                  },
+                  "key_code": "s"
+                },
+                "to": [
+                  {
+                    "repeat": true,
+                    "key_code": "down_arrow",
+                    "modifiers": [
+                      "right_shift",
+                      "left_shift",
+                      "left_option",
+                      "left_control"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "left_arrow + right_shift + left_shift + left_option + left_control = a + fn + right_shift + left_shift + left_option + left_control",
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": {
+                  "modifiers": {
+                    "mandatory": [
+                      "fn",
+                      "right_shift",
+                      "left_shift",
+                      "left_option",
+                      "left_control"
+                    ]
+                  },
+                  "key_code": "a"
+                },
+                "to": [
+                  {
+                    "repeat": true,
+                    "key_code": "left_arrow",
+                    "modifiers": [
+                      "right_shift",
+                      "left_shift",
+                      "left_option",
+                      "left_control"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "right_arrow + right_shift + left_shift + left_option + left_control = d + fn + right_shift + left_shift + left_option + left_control",
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": {
+                  "modifiers": {
+                    "mandatory": [
+                      "fn",
+                      "right_shift",
+                      "left_shift",
+                      "left_option",
+                      "left_control"
+                    ]
+                  },
+                  "key_code": "d"
+                },
+                "to": [
+                  {
+                    "repeat": true,
+                    "key_code": "right_arrow",
+                    "modifiers": [
+                      "right_shift",
+                      "left_shift",
+                      "left_option",
+                      "left_control"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "up_arrow + right_shift + left_shift + left_option + left_control + left_command = w + fn + right_shift + left_shift + left_option + left_control + left_command",
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": {
+                  "modifiers": {
+                    "mandatory": [
+                      "fn",
+                      "right_shift",
+                      "left_shift",
+                      "left_option",
+                      "left_control",
+                      "left_command"
+                    ]
+                  },
+                  "key_code": "w"
+                },
+                "to": [
+                  {
+                    "repeat": true,
+                    "key_code": "up_arrow",
+                    "modifiers": [
+                      "right_shift",
+                      "left_shift",
+                      "left_option",
+                      "left_control",
+                      "left_command"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "down_arrow + right_shift + left_shift + left_option + left_control + left_command = s + fn + right_shift + left_shift + left_option + left_control + left_command",
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": {
+                  "modifiers": {
+                    "mandatory": [
+                      "fn",
+                      "right_shift",
+                      "left_shift",
+                      "left_option",
+                      "left_control",
+                      "left_command"
+                    ]
+                  },
+                  "key_code": "s"
+                },
+                "to": [
+                  {
+                    "repeat": true,
+                    "key_code": "down_arrow",
+                    "modifiers": [
+                      "right_shift",
+                      "left_shift",
+                      "left_option",
+                      "left_control",
+                      "left_command"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "left_arrow + right_shift + left_shift + left_option + left_control + left_command = a + fn + right_shift + left_shift + left_option + left_control + left_command",
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": {
+                  "modifiers": {
+                    "mandatory": [
+                      "fn",
+                      "right_shift",
+                      "left_shift",
+                      "left_option",
+                      "left_control",
+                      "left_command"
+                    ]
+                  },
+                  "key_code": "a"
+                },
+                "to": [
+                  {
+                    "repeat": true,
+                    "key_code": "left_arrow",
+                    "modifiers": [
+                      "right_shift",
+                      "left_shift",
+                      "left_option",
+                      "left_control",
+                      "left_command"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "right_arrow + right_shift + left_shift + left_option + left_control + left_command = d + fn + right_shift + left_shift + left_option + left_control + left_command",
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": {
+                  "modifiers": {
+                    "mandatory": [
+                      "fn",
+                      "right_shift",
+                      "left_shift",
+                      "left_option",
+                      "left_control",
+                      "left_command"
+                    ]
+                  },
+                  "key_code": "d"
+                },
+                "to": [
+                  {
+                    "repeat": true,
+                    "key_code": "right_arrow",
+                    "modifiers": [
+                      "right_shift",
+                      "left_shift",
+                      "left_option",
+                      "left_control",
+                      "left_command"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "up_arrow + right_shift + left_shift + left_option + left_command = w + fn + right_shift + left_shift + left_option + left_command",
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": {
+                  "modifiers": {
+                    "mandatory": [
+                      "fn",
+                      "right_shift",
+                      "left_shift",
+                      "left_option",
+                      "left_command"
+                    ]
+                  },
+                  "key_code": "w"
+                },
+                "to": [
+                  {
+                    "repeat": true,
+                    "key_code": "up_arrow",
+                    "modifiers": [
+                      "right_shift",
+                      "left_shift",
+                      "left_option",
+                      "left_command"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "down_arrow + right_shift + left_shift + left_option + left_command = s + fn + right_shift + left_shift + left_option + left_command",
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": {
+                  "modifiers": {
+                    "mandatory": [
+                      "fn",
+                      "right_shift",
+                      "left_shift",
+                      "left_option",
+                      "left_command"
+                    ]
+                  },
+                  "key_code": "s"
+                },
+                "to": [
+                  {
+                    "repeat": true,
+                    "key_code": "down_arrow",
+                    "modifiers": [
+                      "right_shift",
+                      "left_shift",
+                      "left_option",
+                      "left_command"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "left_arrow + right_shift + left_shift + left_option + left_command = a + fn + right_shift + left_shift + left_option + left_command",
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": {
+                  "modifiers": {
+                    "mandatory": [
+                      "fn",
+                      "right_shift",
+                      "left_shift",
+                      "left_option",
+                      "left_command"
+                    ]
+                  },
+                  "key_code": "a"
+                },
+                "to": [
+                  {
+                    "repeat": true,
+                    "key_code": "left_arrow",
+                    "modifiers": [
+                      "right_shift",
+                      "left_shift",
+                      "left_option",
+                      "left_command"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "right_arrow + right_shift + left_shift + left_option + left_command = d + fn + right_shift + left_shift + left_option + left_command",
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": {
+                  "modifiers": {
+                    "mandatory": [
+                      "fn",
+                      "right_shift",
+                      "left_shift",
+                      "left_option",
+                      "left_command"
+                    ]
+                  },
+                  "key_code": "d"
+                },
+                "to": [
+                  {
+                    "repeat": true,
+                    "key_code": "right_arrow",
+                    "modifiers": [
+                      "right_shift",
+                      "left_shift",
+                      "left_option",
+                      "left_command"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "up_arrow + right_shift + left_shift + left_control = w + fn + right_shift + left_shift + left_control",
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": {
+                  "modifiers": {
+                    "mandatory": [
+                      "fn",
+                      "right_shift",
+                      "left_shift",
+                      "left_control"
+                    ]
+                  },
+                  "key_code": "w"
+                },
+                "to": [
+                  {
+                    "repeat": true,
+                    "key_code": "up_arrow",
+                    "modifiers": [
+                      "right_shift",
+                      "left_shift",
+                      "left_control"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "down_arrow + right_shift + left_shift + left_control = s + fn + right_shift + left_shift + left_control",
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": {
+                  "modifiers": {
+                    "mandatory": [
+                      "fn",
+                      "right_shift",
+                      "left_shift",
+                      "left_control"
+                    ]
+                  },
+                  "key_code": "s"
+                },
+                "to": [
+                  {
+                    "repeat": true,
+                    "key_code": "down_arrow",
+                    "modifiers": [
+                      "right_shift",
+                      "left_shift",
+                      "left_control"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "left_arrow + right_shift + left_shift + left_control = a + fn + right_shift + left_shift + left_control",
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": {
+                  "modifiers": {
+                    "mandatory": [
+                      "fn",
+                      "right_shift",
+                      "left_shift",
+                      "left_control"
+                    ]
+                  },
+                  "key_code": "a"
+                },
+                "to": [
+                  {
+                    "repeat": true,
+                    "key_code": "left_arrow",
+                    "modifiers": [
+                      "right_shift",
+                      "left_shift",
+                      "left_control"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "right_arrow + right_shift + left_shift + left_control = d + fn + right_shift + left_shift + left_control",
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": {
+                  "modifiers": {
+                    "mandatory": [
+                      "fn",
+                      "right_shift",
+                      "left_shift",
+                      "left_control"
+                    ]
+                  },
+                  "key_code": "d"
+                },
+                "to": [
+                  {
+                    "repeat": true,
+                    "key_code": "right_arrow",
+                    "modifiers": [
+                      "right_shift",
+                      "left_shift",
+                      "left_control"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "up_arrow + right_shift + left_shift + left_control + left_command = w + fn + right_shift + left_shift + left_control + left_command",
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": {
+                  "modifiers": {
+                    "mandatory": [
+                      "fn",
+                      "right_shift",
+                      "left_shift",
+                      "left_control",
+                      "left_command"
+                    ]
+                  },
+                  "key_code": "w"
+                },
+                "to": [
+                  {
+                    "repeat": true,
+                    "key_code": "up_arrow",
+                    "modifiers": [
+                      "right_shift",
+                      "left_shift",
+                      "left_control",
+                      "left_command"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "down_arrow + right_shift + left_shift + left_control + left_command = s + fn + right_shift + left_shift + left_control + left_command",
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": {
+                  "modifiers": {
+                    "mandatory": [
+                      "fn",
+                      "right_shift",
+                      "left_shift",
+                      "left_control",
+                      "left_command"
+                    ]
+                  },
+                  "key_code": "s"
+                },
+                "to": [
+                  {
+                    "repeat": true,
+                    "key_code": "down_arrow",
+                    "modifiers": [
+                      "right_shift",
+                      "left_shift",
+                      "left_control",
+                      "left_command"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "left_arrow + right_shift + left_shift + left_control + left_command = a + fn + right_shift + left_shift + left_control + left_command",
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": {
+                  "modifiers": {
+                    "mandatory": [
+                      "fn",
+                      "right_shift",
+                      "left_shift",
+                      "left_control",
+                      "left_command"
+                    ]
+                  },
+                  "key_code": "a"
+                },
+                "to": [
+                  {
+                    "repeat": true,
+                    "key_code": "left_arrow",
+                    "modifiers": [
+                      "right_shift",
+                      "left_shift",
+                      "left_control",
+                      "left_command"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "right_arrow + right_shift + left_shift + left_control + left_command = d + fn + right_shift + left_shift + left_control + left_command",
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": {
+                  "modifiers": {
+                    "mandatory": [
+                      "fn",
+                      "right_shift",
+                      "left_shift",
+                      "left_control",
+                      "left_command"
+                    ]
+                  },
+                  "key_code": "d"
+                },
+                "to": [
+                  {
+                    "repeat": true,
+                    "key_code": "right_arrow",
+                    "modifiers": [
+                      "right_shift",
+                      "left_shift",
+                      "left_control",
+                      "left_command"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "up_arrow + right_shift + left_shift + left_command = w + fn + right_shift + left_shift + left_command",
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": {
+                  "modifiers": {
+                    "mandatory": [
+                      "fn",
+                      "right_shift",
+                      "left_shift",
+                      "left_command"
+                    ]
+                  },
+                  "key_code": "w"
+                },
+                "to": [
+                  {
+                    "repeat": true,
+                    "key_code": "up_arrow",
+                    "modifiers": [
+                      "right_shift",
+                      "left_shift",
+                      "left_command"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "down_arrow + right_shift + left_shift + left_command = s + fn + right_shift + left_shift + left_command",
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": {
+                  "modifiers": {
+                    "mandatory": [
+                      "fn",
+                      "right_shift",
+                      "left_shift",
+                      "left_command"
+                    ]
+                  },
+                  "key_code": "s"
+                },
+                "to": [
+                  {
+                    "repeat": true,
+                    "key_code": "down_arrow",
+                    "modifiers": [
+                      "right_shift",
+                      "left_shift",
+                      "left_command"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "left_arrow + right_shift + left_shift + left_command = a + fn + right_shift + left_shift + left_command",
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": {
+                  "modifiers": {
+                    "mandatory": [
+                      "fn",
+                      "right_shift",
+                      "left_shift",
+                      "left_command"
+                    ]
+                  },
+                  "key_code": "a"
+                },
+                "to": [
+                  {
+                    "repeat": true,
+                    "key_code": "left_arrow",
+                    "modifiers": [
+                      "right_shift",
+                      "left_shift",
+                      "left_command"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "right_arrow + right_shift + left_shift + left_command = d + fn + right_shift + left_shift + left_command",
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": {
+                  "modifiers": {
+                    "mandatory": [
+                      "fn",
+                      "right_shift",
+                      "left_shift",
+                      "left_command"
+                    ]
+                  },
+                  "key_code": "d"
+                },
+                "to": [
+                  {
+                    "repeat": true,
+                    "key_code": "right_arrow",
+                    "modifiers": [
+                      "right_shift",
+                      "left_shift",
+                      "left_command"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "up_arrow + right_shift + left_option = w + fn + right_shift + left_option",
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": {
+                  "modifiers": {
+                    "mandatory": [
+                      "fn",
+                      "right_shift",
+                      "left_option"
+                    ]
+                  },
+                  "key_code": "w"
+                },
+                "to": [
+                  {
+                    "repeat": true,
+                    "key_code": "up_arrow",
+                    "modifiers": [
+                      "right_shift",
+                      "left_option"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "down_arrow + right_shift + left_option = s + fn + right_shift + left_option",
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": {
+                  "modifiers": {
+                    "mandatory": [
+                      "fn",
+                      "right_shift",
+                      "left_option"
+                    ]
+                  },
+                  "key_code": "s"
+                },
+                "to": [
+                  {
+                    "repeat": true,
+                    "key_code": "down_arrow",
+                    "modifiers": [
+                      "right_shift",
+                      "left_option"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "left_arrow + right_shift + left_option = a + fn + right_shift + left_option",
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": {
+                  "modifiers": {
+                    "mandatory": [
+                      "fn",
+                      "right_shift",
+                      "left_option"
+                    ]
+                  },
+                  "key_code": "a"
+                },
+                "to": [
+                  {
+                    "repeat": true,
+                    "key_code": "left_arrow",
+                    "modifiers": [
+                      "right_shift",
+                      "left_option"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "right_arrow + right_shift + left_option = d + fn + right_shift + left_option",
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": {
+                  "modifiers": {
+                    "mandatory": [
+                      "fn",
+                      "right_shift",
+                      "left_option"
+                    ]
+                  },
+                  "key_code": "d"
+                },
+                "to": [
+                  {
+                    "repeat": true,
+                    "key_code": "right_arrow",
+                    "modifiers": [
+                      "right_shift",
+                      "left_option"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "up_arrow + right_shift + left_option + left_control = w + fn + right_shift + left_option + left_control",
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": {
+                  "modifiers": {
+                    "mandatory": [
+                      "fn",
+                      "right_shift",
+                      "left_option",
+                      "left_control"
+                    ]
+                  },
+                  "key_code": "w"
+                },
+                "to": [
+                  {
+                    "repeat": true,
+                    "key_code": "up_arrow",
+                    "modifiers": [
+                      "right_shift",
+                      "left_option",
+                      "left_control"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "down_arrow + right_shift + left_option + left_control = s + fn + right_shift + left_option + left_control",
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": {
+                  "modifiers": {
+                    "mandatory": [
+                      "fn",
+                      "right_shift",
+                      "left_option",
+                      "left_control"
+                    ]
+                  },
+                  "key_code": "s"
+                },
+                "to": [
+                  {
+                    "repeat": true,
+                    "key_code": "down_arrow",
+                    "modifiers": [
+                      "right_shift",
+                      "left_option",
+                      "left_control"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "left_arrow + right_shift + left_option + left_control = a + fn + right_shift + left_option + left_control",
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": {
+                  "modifiers": {
+                    "mandatory": [
+                      "fn",
+                      "right_shift",
+                      "left_option",
+                      "left_control"
+                    ]
+                  },
+                  "key_code": "a"
+                },
+                "to": [
+                  {
+                    "repeat": true,
+                    "key_code": "left_arrow",
+                    "modifiers": [
+                      "right_shift",
+                      "left_option",
+                      "left_control"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "right_arrow + right_shift + left_option + left_control = d + fn + right_shift + left_option + left_control",
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": {
+                  "modifiers": {
+                    "mandatory": [
+                      "fn",
+                      "right_shift",
+                      "left_option",
+                      "left_control"
+                    ]
+                  },
+                  "key_code": "d"
+                },
+                "to": [
+                  {
+                    "repeat": true,
+                    "key_code": "right_arrow",
+                    "modifiers": [
+                      "right_shift",
+                      "left_option",
+                      "left_control"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "up_arrow + right_shift + left_option + left_control + left_command = w + fn + right_shift + left_option + left_control + left_command",
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": {
+                  "modifiers": {
+                    "mandatory": [
+                      "fn",
+                      "right_shift",
+                      "left_option",
+                      "left_control",
+                      "left_command"
+                    ]
+                  },
+                  "key_code": "w"
+                },
+                "to": [
+                  {
+                    "repeat": true,
+                    "key_code": "up_arrow",
+                    "modifiers": [
+                      "right_shift",
+                      "left_option",
+                      "left_control",
+                      "left_command"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "down_arrow + right_shift + left_option + left_control + left_command = s + fn + right_shift + left_option + left_control + left_command",
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": {
+                  "modifiers": {
+                    "mandatory": [
+                      "fn",
+                      "right_shift",
+                      "left_option",
+                      "left_control",
+                      "left_command"
+                    ]
+                  },
+                  "key_code": "s"
+                },
+                "to": [
+                  {
+                    "repeat": true,
+                    "key_code": "down_arrow",
+                    "modifiers": [
+                      "right_shift",
+                      "left_option",
+                      "left_control",
+                      "left_command"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "left_arrow + right_shift + left_option + left_control + left_command = a + fn + right_shift + left_option + left_control + left_command",
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": {
+                  "modifiers": {
+                    "mandatory": [
+                      "fn",
+                      "right_shift",
+                      "left_option",
+                      "left_control",
+                      "left_command"
+                    ]
+                  },
+                  "key_code": "a"
+                },
+                "to": [
+                  {
+                    "repeat": true,
+                    "key_code": "left_arrow",
+                    "modifiers": [
+                      "right_shift",
+                      "left_option",
+                      "left_control",
+                      "left_command"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "right_arrow + right_shift + left_option + left_control + left_command = d + fn + right_shift + left_option + left_control + left_command",
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": {
+                  "modifiers": {
+                    "mandatory": [
+                      "fn",
+                      "right_shift",
+                      "left_option",
+                      "left_control",
+                      "left_command"
+                    ]
+                  },
+                  "key_code": "d"
+                },
+                "to": [
+                  {
+                    "repeat": true,
+                    "key_code": "right_arrow",
+                    "modifiers": [
+                      "right_shift",
+                      "left_option",
+                      "left_control",
+                      "left_command"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "up_arrow + right_shift + left_option + left_command = w + fn + right_shift + left_option + left_command",
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": {
+                  "modifiers": {
+                    "mandatory": [
+                      "fn",
+                      "right_shift",
+                      "left_option",
+                      "left_command"
+                    ]
+                  },
+                  "key_code": "w"
+                },
+                "to": [
+                  {
+                    "repeat": true,
+                    "key_code": "up_arrow",
+                    "modifiers": [
+                      "right_shift",
+                      "left_option",
+                      "left_command"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "down_arrow + right_shift + left_option + left_command = s + fn + right_shift + left_option + left_command",
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": {
+                  "modifiers": {
+                    "mandatory": [
+                      "fn",
+                      "right_shift",
+                      "left_option",
+                      "left_command"
+                    ]
+                  },
+                  "key_code": "s"
+                },
+                "to": [
+                  {
+                    "repeat": true,
+                    "key_code": "down_arrow",
+                    "modifiers": [
+                      "right_shift",
+                      "left_option",
+                      "left_command"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "left_arrow + right_shift + left_option + left_command = a + fn + right_shift + left_option + left_command",
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": {
+                  "modifiers": {
+                    "mandatory": [
+                      "fn",
+                      "right_shift",
+                      "left_option",
+                      "left_command"
+                    ]
+                  },
+                  "key_code": "a"
+                },
+                "to": [
+                  {
+                    "repeat": true,
+                    "key_code": "left_arrow",
+                    "modifiers": [
+                      "right_shift",
+                      "left_option",
+                      "left_command"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "right_arrow + right_shift + left_option + left_command = d + fn + right_shift + left_option + left_command",
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": {
+                  "modifiers": {
+                    "mandatory": [
+                      "fn",
+                      "right_shift",
+                      "left_option",
+                      "left_command"
+                    ]
+                  },
+                  "key_code": "d"
+                },
+                "to": [
+                  {
+                    "repeat": true,
+                    "key_code": "right_arrow",
+                    "modifiers": [
+                      "right_shift",
+                      "left_option",
+                      "left_command"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "up_arrow + right_shift + left_control = w + fn + right_shift + left_control",
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": {
+                  "modifiers": {
+                    "mandatory": [
+                      "fn",
+                      "right_shift",
+                      "left_control"
+                    ]
+                  },
+                  "key_code": "w"
+                },
+                "to": [
+                  {
+                    "repeat": true,
+                    "key_code": "up_arrow",
+                    "modifiers": [
+                      "right_shift",
+                      "left_control"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "down_arrow + right_shift + left_control = s + fn + right_shift + left_control",
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": {
+                  "modifiers": {
+                    "mandatory": [
+                      "fn",
+                      "right_shift",
+                      "left_control"
+                    ]
+                  },
+                  "key_code": "s"
+                },
+                "to": [
+                  {
+                    "repeat": true,
+                    "key_code": "down_arrow",
+                    "modifiers": [
+                      "right_shift",
+                      "left_control"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "left_arrow + right_shift + left_control = a + fn + right_shift + left_control",
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": {
+                  "modifiers": {
+                    "mandatory": [
+                      "fn",
+                      "right_shift",
+                      "left_control"
+                    ]
+                  },
+                  "key_code": "a"
+                },
+                "to": [
+                  {
+                    "repeat": true,
+                    "key_code": "left_arrow",
+                    "modifiers": [
+                      "right_shift",
+                      "left_control"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "right_arrow + right_shift + left_control = d + fn + right_shift + left_control",
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": {
+                  "modifiers": {
+                    "mandatory": [
+                      "fn",
+                      "right_shift",
+                      "left_control"
+                    ]
+                  },
+                  "key_code": "d"
+                },
+                "to": [
+                  {
+                    "repeat": true,
+                    "key_code": "right_arrow",
+                    "modifiers": [
+                      "right_shift",
+                      "left_control"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "up_arrow + right_shift + left_control + left_command = w + fn + right_shift + left_control + left_command",
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": {
+                  "modifiers": {
+                    "mandatory": [
+                      "fn",
+                      "right_shift",
+                      "left_control",
+                      "left_command"
+                    ]
+                  },
+                  "key_code": "w"
+                },
+                "to": [
+                  {
+                    "repeat": true,
+                    "key_code": "up_arrow",
+                    "modifiers": [
+                      "right_shift",
+                      "left_control",
+                      "left_command"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "down_arrow + right_shift + left_control + left_command = s + fn + right_shift + left_control + left_command",
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": {
+                  "modifiers": {
+                    "mandatory": [
+                      "fn",
+                      "right_shift",
+                      "left_control",
+                      "left_command"
+                    ]
+                  },
+                  "key_code": "s"
+                },
+                "to": [
+                  {
+                    "repeat": true,
+                    "key_code": "down_arrow",
+                    "modifiers": [
+                      "right_shift",
+                      "left_control",
+                      "left_command"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "left_arrow + right_shift + left_control + left_command = a + fn + right_shift + left_control + left_command",
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": {
+                  "modifiers": {
+                    "mandatory": [
+                      "fn",
+                      "right_shift",
+                      "left_control",
+                      "left_command"
+                    ]
+                  },
+                  "key_code": "a"
+                },
+                "to": [
+                  {
+                    "repeat": true,
+                    "key_code": "left_arrow",
+                    "modifiers": [
+                      "right_shift",
+                      "left_control",
+                      "left_command"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "right_arrow + right_shift + left_control + left_command = d + fn + right_shift + left_control + left_command",
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": {
+                  "modifiers": {
+                    "mandatory": [
+                      "fn",
+                      "right_shift",
+                      "left_control",
+                      "left_command"
+                    ]
+                  },
+                  "key_code": "d"
+                },
+                "to": [
+                  {
+                    "repeat": true,
+                    "key_code": "right_arrow",
+                    "modifiers": [
+                      "right_shift",
+                      "left_control",
+                      "left_command"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "up_arrow + right_shift + left_command = w + fn + right_shift + left_command",
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": {
+                  "modifiers": {
+                    "mandatory": [
+                      "fn",
+                      "right_shift",
+                      "left_command"
+                    ]
+                  },
+                  "key_code": "w"
+                },
+                "to": [
+                  {
+                    "repeat": true,
+                    "key_code": "up_arrow",
+                    "modifiers": [
+                      "right_shift",
+                      "left_command"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "down_arrow + right_shift + left_command = s + fn + right_shift + left_command",
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": {
+                  "modifiers": {
+                    "mandatory": [
+                      "fn",
+                      "right_shift",
+                      "left_command"
+                    ]
+                  },
+                  "key_code": "s"
+                },
+                "to": [
+                  {
+                    "repeat": true,
+                    "key_code": "down_arrow",
+                    "modifiers": [
+                      "right_shift",
+                      "left_command"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "left_arrow + right_shift + left_command = a + fn + right_shift + left_command",
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": {
+                  "modifiers": {
+                    "mandatory": [
+                      "fn",
+                      "right_shift",
+                      "left_command"
+                    ]
+                  },
+                  "key_code": "a"
+                },
+                "to": [
+                  {
+                    "repeat": true,
+                    "key_code": "left_arrow",
+                    "modifiers": [
+                      "right_shift",
+                      "left_command"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "right_arrow + right_shift + left_command = d + fn + right_shift + left_command",
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": {
+                  "modifiers": {
+                    "mandatory": [
+                      "fn",
+                      "right_shift",
+                      "left_command"
+                    ]
+                  },
+                  "key_code": "d"
+                },
+                "to": [
+                  {
+                    "repeat": true,
+                    "key_code": "right_arrow",
+                    "modifiers": [
+                      "right_shift",
+                      "left_command"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "up_arrow + left_shift = w + fn + left_shift",
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": {
+                  "modifiers": {
+                    "mandatory": [
+                      "fn",
+                      "left_shift"
+                    ]
+                  },
+                  "key_code": "w"
+                },
+                "to": [
+                  {
+                    "repeat": true,
+                    "key_code": "up_arrow",
+                    "modifiers": [
+                      "left_shift"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "down_arrow + left_shift = s + fn + left_shift",
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": {
+                  "modifiers": {
+                    "mandatory": [
+                      "fn",
+                      "left_shift"
+                    ]
+                  },
+                  "key_code": "s"
+                },
+                "to": [
+                  {
+                    "repeat": true,
+                    "key_code": "down_arrow",
+                    "modifiers": [
+                      "left_shift"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "left_arrow + left_shift = a + fn + left_shift",
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": {
+                  "modifiers": {
+                    "mandatory": [
+                      "fn",
+                      "left_shift"
+                    ]
+                  },
+                  "key_code": "a"
+                },
+                "to": [
+                  {
+                    "repeat": true,
+                    "key_code": "left_arrow",
+                    "modifiers": [
+                      "left_shift"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "right_arrow + left_shift = d + fn + left_shift",
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": {
+                  "modifiers": {
+                    "mandatory": [
+                      "fn",
+                      "left_shift"
+                    ]
+                  },
+                  "key_code": "d"
+                },
+                "to": [
+                  {
+                    "repeat": true,
+                    "key_code": "right_arrow",
+                    "modifiers": [
+                      "left_shift"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "up_arrow + left_shift + left_option = w + fn + left_shift + left_option",
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": {
+                  "modifiers": {
+                    "mandatory": [
+                      "fn",
+                      "left_shift",
+                      "left_option"
+                    ]
+                  },
+                  "key_code": "w"
+                },
+                "to": [
+                  {
+                    "repeat": true,
+                    "key_code": "up_arrow",
+                    "modifiers": [
+                      "left_shift",
+                      "left_option"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "down_arrow + left_shift + left_option = s + fn + left_shift + left_option",
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": {
+                  "modifiers": {
+                    "mandatory": [
+                      "fn",
+                      "left_shift",
+                      "left_option"
+                    ]
+                  },
+                  "key_code": "s"
+                },
+                "to": [
+                  {
+                    "repeat": true,
+                    "key_code": "down_arrow",
+                    "modifiers": [
+                      "left_shift",
+                      "left_option"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "left_arrow + left_shift + left_option = a + fn + left_shift + left_option",
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": {
+                  "modifiers": {
+                    "mandatory": [
+                      "fn",
+                      "left_shift",
+                      "left_option"
+                    ]
+                  },
+                  "key_code": "a"
+                },
+                "to": [
+                  {
+                    "repeat": true,
+                    "key_code": "left_arrow",
+                    "modifiers": [
+                      "left_shift",
+                      "left_option"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "right_arrow + left_shift + left_option = d + fn + left_shift + left_option",
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": {
+                  "modifiers": {
+                    "mandatory": [
+                      "fn",
+                      "left_shift",
+                      "left_option"
+                    ]
+                  },
+                  "key_code": "d"
+                },
+                "to": [
+                  {
+                    "repeat": true,
+                    "key_code": "right_arrow",
+                    "modifiers": [
+                      "left_shift",
+                      "left_option"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "up_arrow + left_shift + left_option + left_control = w + fn + left_shift + left_option + left_control",
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": {
+                  "modifiers": {
+                    "mandatory": [
+                      "fn",
+                      "left_shift",
+                      "left_option",
+                      "left_control"
+                    ]
+                  },
+                  "key_code": "w"
+                },
+                "to": [
+                  {
+                    "repeat": true,
+                    "key_code": "up_arrow",
+                    "modifiers": [
+                      "left_shift",
+                      "left_option",
+                      "left_control"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "down_arrow + left_shift + left_option + left_control = s + fn + left_shift + left_option + left_control",
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": {
+                  "modifiers": {
+                    "mandatory": [
+                      "fn",
+                      "left_shift",
+                      "left_option",
+                      "left_control"
+                    ]
+                  },
+                  "key_code": "s"
+                },
+                "to": [
+                  {
+                    "repeat": true,
+                    "key_code": "down_arrow",
+                    "modifiers": [
+                      "left_shift",
+                      "left_option",
+                      "left_control"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "left_arrow + left_shift + left_option + left_control = a + fn + left_shift + left_option + left_control",
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": {
+                  "modifiers": {
+                    "mandatory": [
+                      "fn",
+                      "left_shift",
+                      "left_option",
+                      "left_control"
+                    ]
+                  },
+                  "key_code": "a"
+                },
+                "to": [
+                  {
+                    "repeat": true,
+                    "key_code": "left_arrow",
+                    "modifiers": [
+                      "left_shift",
+                      "left_option",
+                      "left_control"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "right_arrow + left_shift + left_option + left_control = d + fn + left_shift + left_option + left_control",
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": {
+                  "modifiers": {
+                    "mandatory": [
+                      "fn",
+                      "left_shift",
+                      "left_option",
+                      "left_control"
+                    ]
+                  },
+                  "key_code": "d"
+                },
+                "to": [
+                  {
+                    "repeat": true,
+                    "key_code": "right_arrow",
+                    "modifiers": [
+                      "left_shift",
+                      "left_option",
+                      "left_control"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "up_arrow + left_shift + left_option + left_control + left_command = w + fn + left_shift + left_option + left_control + left_command",
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": {
+                  "modifiers": {
+                    "mandatory": [
+                      "fn",
+                      "left_shift",
+                      "left_option",
+                      "left_control",
+                      "left_command"
+                    ]
+                  },
+                  "key_code": "w"
+                },
+                "to": [
+                  {
+                    "repeat": true,
+                    "key_code": "up_arrow",
+                    "modifiers": [
+                      "left_shift",
+                      "left_option",
+                      "left_control",
+                      "left_command"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "down_arrow + left_shift + left_option + left_control + left_command = s + fn + left_shift + left_option + left_control + left_command",
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": {
+                  "modifiers": {
+                    "mandatory": [
+                      "fn",
+                      "left_shift",
+                      "left_option",
+                      "left_control",
+                      "left_command"
+                    ]
+                  },
+                  "key_code": "s"
+                },
+                "to": [
+                  {
+                    "repeat": true,
+                    "key_code": "down_arrow",
+                    "modifiers": [
+                      "left_shift",
+                      "left_option",
+                      "left_control",
+                      "left_command"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "left_arrow + left_shift + left_option + left_control + left_command = a + fn + left_shift + left_option + left_control + left_command",
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": {
+                  "modifiers": {
+                    "mandatory": [
+                      "fn",
+                      "left_shift",
+                      "left_option",
+                      "left_control",
+                      "left_command"
+                    ]
+                  },
+                  "key_code": "a"
+                },
+                "to": [
+                  {
+                    "repeat": true,
+                    "key_code": "left_arrow",
+                    "modifiers": [
+                      "left_shift",
+                      "left_option",
+                      "left_control",
+                      "left_command"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "right_arrow + left_shift + left_option + left_control + left_command = d + fn + left_shift + left_option + left_control + left_command",
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": {
+                  "modifiers": {
+                    "mandatory": [
+                      "fn",
+                      "left_shift",
+                      "left_option",
+                      "left_control",
+                      "left_command"
+                    ]
+                  },
+                  "key_code": "d"
+                },
+                "to": [
+                  {
+                    "repeat": true,
+                    "key_code": "right_arrow",
+                    "modifiers": [
+                      "left_shift",
+                      "left_option",
+                      "left_control",
+                      "left_command"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "up_arrow + left_shift + left_option + left_command = w + fn + left_shift + left_option + left_command",
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": {
+                  "modifiers": {
+                    "mandatory": [
+                      "fn",
+                      "left_shift",
+                      "left_option",
+                      "left_command"
+                    ]
+                  },
+                  "key_code": "w"
+                },
+                "to": [
+                  {
+                    "repeat": true,
+                    "key_code": "up_arrow",
+                    "modifiers": [
+                      "left_shift",
+                      "left_option",
+                      "left_command"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "down_arrow + left_shift + left_option + left_command = s + fn + left_shift + left_option + left_command",
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": {
+                  "modifiers": {
+                    "mandatory": [
+                      "fn",
+                      "left_shift",
+                      "left_option",
+                      "left_command"
+                    ]
+                  },
+                  "key_code": "s"
+                },
+                "to": [
+                  {
+                    "repeat": true,
+                    "key_code": "down_arrow",
+                    "modifiers": [
+                      "left_shift",
+                      "left_option",
+                      "left_command"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "left_arrow + left_shift + left_option + left_command = a + fn + left_shift + left_option + left_command",
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": {
+                  "modifiers": {
+                    "mandatory": [
+                      "fn",
+                      "left_shift",
+                      "left_option",
+                      "left_command"
+                    ]
+                  },
+                  "key_code": "a"
+                },
+                "to": [
+                  {
+                    "repeat": true,
+                    "key_code": "left_arrow",
+                    "modifiers": [
+                      "left_shift",
+                      "left_option",
+                      "left_command"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "right_arrow + left_shift + left_option + left_command = d + fn + left_shift + left_option + left_command",
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": {
+                  "modifiers": {
+                    "mandatory": [
+                      "fn",
+                      "left_shift",
+                      "left_option",
+                      "left_command"
+                    ]
+                  },
+                  "key_code": "d"
+                },
+                "to": [
+                  {
+                    "repeat": true,
+                    "key_code": "right_arrow",
+                    "modifiers": [
+                      "left_shift",
+                      "left_option",
+                      "left_command"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "up_arrow + left_shift + left_control = w + fn + left_shift + left_control",
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": {
+                  "modifiers": {
+                    "mandatory": [
+                      "fn",
+                      "left_shift",
+                      "left_control"
+                    ]
+                  },
+                  "key_code": "w"
+                },
+                "to": [
+                  {
+                    "repeat": true,
+                    "key_code": "up_arrow",
+                    "modifiers": [
+                      "left_shift",
+                      "left_control"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "down_arrow + left_shift + left_control = s + fn + left_shift + left_control",
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": {
+                  "modifiers": {
+                    "mandatory": [
+                      "fn",
+                      "left_shift",
+                      "left_control"
+                    ]
+                  },
+                  "key_code": "s"
+                },
+                "to": [
+                  {
+                    "repeat": true,
+                    "key_code": "down_arrow",
+                    "modifiers": [
+                      "left_shift",
+                      "left_control"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "left_arrow + left_shift + left_control = a + fn + left_shift + left_control",
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": {
+                  "modifiers": {
+                    "mandatory": [
+                      "fn",
+                      "left_shift",
+                      "left_control"
+                    ]
+                  },
+                  "key_code": "a"
+                },
+                "to": [
+                  {
+                    "repeat": true,
+                    "key_code": "left_arrow",
+                    "modifiers": [
+                      "left_shift",
+                      "left_control"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "right_arrow + left_shift + left_control = d + fn + left_shift + left_control",
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": {
+                  "modifiers": {
+                    "mandatory": [
+                      "fn",
+                      "left_shift",
+                      "left_control"
+                    ]
+                  },
+                  "key_code": "d"
+                },
+                "to": [
+                  {
+                    "repeat": true,
+                    "key_code": "right_arrow",
+                    "modifiers": [
+                      "left_shift",
+                      "left_control"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "up_arrow + left_shift + left_control + left_command = w + fn + left_shift + left_control + left_command",
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": {
+                  "modifiers": {
+                    "mandatory": [
+                      "fn",
+                      "left_shift",
+                      "left_control",
+                      "left_command"
+                    ]
+                  },
+                  "key_code": "w"
+                },
+                "to": [
+                  {
+                    "repeat": true,
+                    "key_code": "up_arrow",
+                    "modifiers": [
+                      "left_shift",
+                      "left_control",
+                      "left_command"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "down_arrow + left_shift + left_control + left_command = s + fn + left_shift + left_control + left_command",
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": {
+                  "modifiers": {
+                    "mandatory": [
+                      "fn",
+                      "left_shift",
+                      "left_control",
+                      "left_command"
+                    ]
+                  },
+                  "key_code": "s"
+                },
+                "to": [
+                  {
+                    "repeat": true,
+                    "key_code": "down_arrow",
+                    "modifiers": [
+                      "left_shift",
+                      "left_control",
+                      "left_command"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "left_arrow + left_shift + left_control + left_command = a + fn + left_shift + left_control + left_command",
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": {
+                  "modifiers": {
+                    "mandatory": [
+                      "fn",
+                      "left_shift",
+                      "left_control",
+                      "left_command"
+                    ]
+                  },
+                  "key_code": "a"
+                },
+                "to": [
+                  {
+                    "repeat": true,
+                    "key_code": "left_arrow",
+                    "modifiers": [
+                      "left_shift",
+                      "left_control",
+                      "left_command"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "right_arrow + left_shift + left_control + left_command = d + fn + left_shift + left_control + left_command",
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": {
+                  "modifiers": {
+                    "mandatory": [
+                      "fn",
+                      "left_shift",
+                      "left_control",
+                      "left_command"
+                    ]
+                  },
+                  "key_code": "d"
+                },
+                "to": [
+                  {
+                    "repeat": true,
+                    "key_code": "right_arrow",
+                    "modifiers": [
+                      "left_shift",
+                      "left_control",
+                      "left_command"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "up_arrow + left_shift + left_command = w + fn + left_shift + left_command",
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": {
+                  "modifiers": {
+                    "mandatory": [
+                      "fn",
+                      "left_shift",
+                      "left_command"
+                    ]
+                  },
+                  "key_code": "w"
+                },
+                "to": [
+                  {
+                    "repeat": true,
+                    "key_code": "up_arrow",
+                    "modifiers": [
+                      "left_shift",
+                      "left_command"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "down_arrow + left_shift + left_command = s + fn + left_shift + left_command",
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": {
+                  "modifiers": {
+                    "mandatory": [
+                      "fn",
+                      "left_shift",
+                      "left_command"
+                    ]
+                  },
+                  "key_code": "s"
+                },
+                "to": [
+                  {
+                    "repeat": true,
+                    "key_code": "down_arrow",
+                    "modifiers": [
+                      "left_shift",
+                      "left_command"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "left_arrow + left_shift + left_command = a + fn + left_shift + left_command",
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": {
+                  "modifiers": {
+                    "mandatory": [
+                      "fn",
+                      "left_shift",
+                      "left_command"
+                    ]
+                  },
+                  "key_code": "a"
+                },
+                "to": [
+                  {
+                    "repeat": true,
+                    "key_code": "left_arrow",
+                    "modifiers": [
+                      "left_shift",
+                      "left_command"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "right_arrow + left_shift + left_command = d + fn + left_shift + left_command",
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": {
+                  "modifiers": {
+                    "mandatory": [
+                      "fn",
+                      "left_shift",
+                      "left_command"
+                    ]
+                  },
+                  "key_code": "d"
+                },
+                "to": [
+                  {
+                    "repeat": true,
+                    "key_code": "right_arrow",
+                    "modifiers": [
+                      "left_shift",
+                      "left_command"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "up_arrow + left_option = w + fn + left_option",
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": {
+                  "modifiers": {
+                    "mandatory": [
+                      "fn",
+                      "left_option"
+                    ]
+                  },
+                  "key_code": "w"
+                },
+                "to": [
+                  {
+                    "repeat": true,
+                    "key_code": "up_arrow",
+                    "modifiers": [
+                      "left_option"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "down_arrow + left_option = s + fn + left_option",
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": {
+                  "modifiers": {
+                    "mandatory": [
+                      "fn",
+                      "left_option"
+                    ]
+                  },
+                  "key_code": "s"
+                },
+                "to": [
+                  {
+                    "repeat": true,
+                    "key_code": "down_arrow",
+                    "modifiers": [
+                      "left_option"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "left_arrow + left_option = a + fn + left_option",
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": {
+                  "modifiers": {
+                    "mandatory": [
+                      "fn",
+                      "left_option"
+                    ]
+                  },
+                  "key_code": "a"
+                },
+                "to": [
+                  {
+                    "repeat": true,
+                    "key_code": "left_arrow",
+                    "modifiers": [
+                      "left_option"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "right_arrow + left_option = d + fn + left_option",
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": {
+                  "modifiers": {
+                    "mandatory": [
+                      "fn",
+                      "left_option"
+                    ]
+                  },
+                  "key_code": "d"
+                },
+                "to": [
+                  {
+                    "repeat": true,
+                    "key_code": "right_arrow",
+                    "modifiers": [
+                      "left_option"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "up_arrow + left_option + left_control = w + fn + left_option + left_control",
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": {
+                  "modifiers": {
+                    "mandatory": [
+                      "fn",
+                      "left_option",
+                      "left_control"
+                    ]
+                  },
+                  "key_code": "w"
+                },
+                "to": [
+                  {
+                    "repeat": true,
+                    "key_code": "up_arrow",
+                    "modifiers": [
+                      "left_option",
+                      "left_control"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "down_arrow + left_option + left_control = s + fn + left_option + left_control",
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": {
+                  "modifiers": {
+                    "mandatory": [
+                      "fn",
+                      "left_option",
+                      "left_control"
+                    ]
+                  },
+                  "key_code": "s"
+                },
+                "to": [
+                  {
+                    "repeat": true,
+                    "key_code": "down_arrow",
+                    "modifiers": [
+                      "left_option",
+                      "left_control"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "left_arrow + left_option + left_control = a + fn + left_option + left_control",
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": {
+                  "modifiers": {
+                    "mandatory": [
+                      "fn",
+                      "left_option",
+                      "left_control"
+                    ]
+                  },
+                  "key_code": "a"
+                },
+                "to": [
+                  {
+                    "repeat": true,
+                    "key_code": "left_arrow",
+                    "modifiers": [
+                      "left_option",
+                      "left_control"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "right_arrow + left_option + left_control = d + fn + left_option + left_control",
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": {
+                  "modifiers": {
+                    "mandatory": [
+                      "fn",
+                      "left_option",
+                      "left_control"
+                    ]
+                  },
+                  "key_code": "d"
+                },
+                "to": [
+                  {
+                    "repeat": true,
+                    "key_code": "right_arrow",
+                    "modifiers": [
+                      "left_option",
+                      "left_control"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "up_arrow + left_option + left_control + left_command = w + fn + left_option + left_control + left_command",
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": {
+                  "modifiers": {
+                    "mandatory": [
+                      "fn",
+                      "left_option",
+                      "left_control",
+                      "left_command"
+                    ]
+                  },
+                  "key_code": "w"
+                },
+                "to": [
+                  {
+                    "repeat": true,
+                    "key_code": "up_arrow",
+                    "modifiers": [
+                      "left_option",
+                      "left_control",
+                      "left_command"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "down_arrow + left_option + left_control + left_command = s + fn + left_option + left_control + left_command",
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": {
+                  "modifiers": {
+                    "mandatory": [
+                      "fn",
+                      "left_option",
+                      "left_control",
+                      "left_command"
+                    ]
+                  },
+                  "key_code": "s"
+                },
+                "to": [
+                  {
+                    "repeat": true,
+                    "key_code": "down_arrow",
+                    "modifiers": [
+                      "left_option",
+                      "left_control",
+                      "left_command"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "left_arrow + left_option + left_control + left_command = a + fn + left_option + left_control + left_command",
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": {
+                  "modifiers": {
+                    "mandatory": [
+                      "fn",
+                      "left_option",
+                      "left_control",
+                      "left_command"
+                    ]
+                  },
+                  "key_code": "a"
+                },
+                "to": [
+                  {
+                    "repeat": true,
+                    "key_code": "left_arrow",
+                    "modifiers": [
+                      "left_option",
+                      "left_control",
+                      "left_command"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "right_arrow + left_option + left_control + left_command = d + fn + left_option + left_control + left_command",
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": {
+                  "modifiers": {
+                    "mandatory": [
+                      "fn",
+                      "left_option",
+                      "left_control",
+                      "left_command"
+                    ]
+                  },
+                  "key_code": "d"
+                },
+                "to": [
+                  {
+                    "repeat": true,
+                    "key_code": "right_arrow",
+                    "modifiers": [
+                      "left_option",
+                      "left_control",
+                      "left_command"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "up_arrow + left_option + left_command = w + fn + left_option + left_command",
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": {
+                  "modifiers": {
+                    "mandatory": [
+                      "fn",
+                      "left_option",
+                      "left_command"
+                    ]
+                  },
+                  "key_code": "w"
+                },
+                "to": [
+                  {
+                    "repeat": true,
+                    "key_code": "up_arrow",
+                    "modifiers": [
+                      "left_option",
+                      "left_command"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "down_arrow + left_option + left_command = s + fn + left_option + left_command",
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": {
+                  "modifiers": {
+                    "mandatory": [
+                      "fn",
+                      "left_option",
+                      "left_command"
+                    ]
+                  },
+                  "key_code": "s"
+                },
+                "to": [
+                  {
+                    "repeat": true,
+                    "key_code": "down_arrow",
+                    "modifiers": [
+                      "left_option",
+                      "left_command"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "left_arrow + left_option + left_command = a + fn + left_option + left_command",
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": {
+                  "modifiers": {
+                    "mandatory": [
+                      "fn",
+                      "left_option",
+                      "left_command"
+                    ]
+                  },
+                  "key_code": "a"
+                },
+                "to": [
+                  {
+                    "repeat": true,
+                    "key_code": "left_arrow",
+                    "modifiers": [
+                      "left_option",
+                      "left_command"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "right_arrow + left_option + left_command = d + fn + left_option + left_command",
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": {
+                  "modifiers": {
+                    "mandatory": [
+                      "fn",
+                      "left_option",
+                      "left_command"
+                    ]
+                  },
+                  "key_code": "d"
+                },
+                "to": [
+                  {
+                    "repeat": true,
+                    "key_code": "right_arrow",
+                    "modifiers": [
+                      "left_option",
+                      "left_command"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "up_arrow + left_control = w + fn + left_control",
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": {
+                  "modifiers": {
+                    "mandatory": [
+                      "fn",
+                      "left_control"
+                    ]
+                  },
+                  "key_code": "w"
+                },
+                "to": [
+                  {
+                    "repeat": true,
+                    "key_code": "up_arrow",
+                    "modifiers": [
+                      "left_control"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "down_arrow + left_control = s + fn + left_control",
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": {
+                  "modifiers": {
+                    "mandatory": [
+                      "fn",
+                      "left_control"
+                    ]
+                  },
+                  "key_code": "s"
+                },
+                "to": [
+                  {
+                    "repeat": true,
+                    "key_code": "down_arrow",
+                    "modifiers": [
+                      "left_control"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "left_arrow + left_control = a + fn + left_control",
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": {
+                  "modifiers": {
+                    "mandatory": [
+                      "fn",
+                      "left_control"
+                    ]
+                  },
+                  "key_code": "a"
+                },
+                "to": [
+                  {
+                    "repeat": true,
+                    "key_code": "left_arrow",
+                    "modifiers": [
+                      "left_control"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "right_arrow + left_control = d + fn + left_control",
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": {
+                  "modifiers": {
+                    "mandatory": [
+                      "fn",
+                      "left_control"
+                    ]
+                  },
+                  "key_code": "d"
+                },
+                "to": [
+                  {
+                    "repeat": true,
+                    "key_code": "right_arrow",
+                    "modifiers": [
+                      "left_control"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "up_arrow + left_control + left_command = w + fn + left_control + left_command",
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": {
+                  "modifiers": {
+                    "mandatory": [
+                      "fn",
+                      "left_control",
+                      "left_command"
+                    ]
+                  },
+                  "key_code": "w"
+                },
+                "to": [
+                  {
+                    "repeat": true,
+                    "key_code": "up_arrow",
+                    "modifiers": [
+                      "left_control",
+                      "left_command"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "down_arrow + left_control + left_command = s + fn + left_control + left_command",
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": {
+                  "modifiers": {
+                    "mandatory": [
+                      "fn",
+                      "left_control",
+                      "left_command"
+                    ]
+                  },
+                  "key_code": "s"
+                },
+                "to": [
+                  {
+                    "repeat": true,
+                    "key_code": "down_arrow",
+                    "modifiers": [
+                      "left_control",
+                      "left_command"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "left_arrow + left_control + left_command = a + fn + left_control + left_command",
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": {
+                  "modifiers": {
+                    "mandatory": [
+                      "fn",
+                      "left_control",
+                      "left_command"
+                    ]
+                  },
+                  "key_code": "a"
+                },
+                "to": [
+                  {
+                    "repeat": true,
+                    "key_code": "left_arrow",
+                    "modifiers": [
+                      "left_control",
+                      "left_command"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "right_arrow + left_control + left_command = d + fn + left_control + left_command",
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": {
+                  "modifiers": {
+                    "mandatory": [
+                      "fn",
+                      "left_control",
+                      "left_command"
+                    ]
+                  },
+                  "key_code": "d"
+                },
+                "to": [
+                  {
+                    "repeat": true,
+                    "key_code": "right_arrow",
+                    "modifiers": [
+                      "left_control",
+                      "left_command"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "up_arrow + left_command = w + fn + left_command",
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": {
+                  "modifiers": {
+                    "mandatory": [
+                      "fn",
+                      "left_command"
+                    ]
+                  },
+                  "key_code": "w"
+                },
+                "to": [
+                  {
+                    "repeat": true,
+                    "key_code": "up_arrow",
+                    "modifiers": [
+                      "left_command"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "down_arrow + left_command = s + fn + left_command",
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": {
+                  "modifiers": {
+                    "mandatory": [
+                      "fn",
+                      "left_command"
+                    ]
+                  },
+                  "key_code": "s"
+                },
+                "to": [
+                  {
+                    "repeat": true,
+                    "key_code": "down_arrow",
+                    "modifiers": [
+                      "left_command"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "left_arrow + left_command = a + fn + left_command",
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": {
+                  "modifiers": {
+                    "mandatory": [
+                      "fn",
+                      "left_command"
+                    ]
+                  },
+                  "key_code": "a"
+                },
+                "to": [
+                  {
+                    "repeat": true,
+                    "key_code": "left_arrow",
+                    "modifiers": [
+                      "left_command"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "right_arrow + left_command = d + fn + left_command",
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": {
+                  "modifiers": {
+                    "mandatory": [
+                      "fn",
+                      "left_command"
+                    ]
+                  },
+                  "key_code": "d"
+                },
+                "to": [
+                  {
+                    "repeat": true,
+                    "key_code": "right_arrow",
+                    "modifiers": [
+                      "left_command"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "home = l + fn",
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": {
+                  "modifiers": {
+                    "mandatory": [
+                      "fn"
+                    ]
+                  },
+                  "key_code": "l"
+                },
+                "to": [
+                  {
+                    "repeat": true,
+                    "key_code": "home",
+                    "modifiers": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "end = comma + fn",
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": {
+                  "modifiers": {
+                    "mandatory": [
+                      "fn"
+                    ]
+                  },
+                  "key_code": "comma"
+                },
+                "to": [
+                  {
+                    "repeat": true,
+                    "key_code": "end",
+                    "modifiers": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "home + right_shift = l + fn + right_shift",
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": {
+                  "modifiers": {
+                    "mandatory": [
+                      "fn",
+                      "right_shift"
+                    ]
+                  },
+                  "key_code": "l"
+                },
+                "to": [
+                  {
+                    "repeat": true,
+                    "key_code": "home",
+                    "modifiers": [
+                      "right_shift"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "end + right_shift = comma + fn + right_shift",
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": {
+                  "modifiers": {
+                    "mandatory": [
+                      "fn",
+                      "right_shift"
+                    ]
+                  },
+                  "key_code": "comma"
+                },
+                "to": [
+                  {
+                    "repeat": true,
+                    "key_code": "end",
+                    "modifiers": [
+                      "right_shift"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "home + left_shift = l + fn + left_shift",
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": {
+                  "modifiers": {
+                    "mandatory": [
+                      "fn",
+                      "left_shift"
+                    ]
+                  },
+                  "key_code": "l"
+                },
+                "to": [
+                  {
+                    "repeat": true,
+                    "key_code": "home",
+                    "modifiers": [
+                      "left_shift"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "end + left_shift = comma + fn + left_shift",
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": {
+                  "modifiers": {
+                    "mandatory": [
+                      "fn",
+                      "left_shift"
+                    ]
+                  },
+                  "key_code": "comma"
+                },
+                "to": [
+                  {
+                    "repeat": true,
+                    "key_code": "end",
+                    "modifiers": [
+                      "left_shift"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "delete_forward = delete_or_backspace + fn",
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": {
+                  "modifiers": {
+                    "mandatory": [
+                      "fn"
+                    ]
+                  },
+                  "key_code": "delete_or_backspace"
+                },
+                "to": [
+                  {
+                    "repeat": true,
+                    "key_code": "delete_forward",
+                    "modifiers": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "f2 = 2 + fn",
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": {
+                  "modifiers": {
+                    "mandatory": [
+                      "fn"
+                    ]
+                  },
+                  "key_code": "2"
+                },
+                "to": [
+                  {
+                    "repeat": true,
+                    "key_code": "f2",
+                    "modifiers": []
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "devices": [
+        {
+          "disable_built_in_keyboard_if_exists": false,
+          "fn_function_keys": [],
+          "identifiers": {
+            "is_keyboard": true,
+            "is_pointing_device": false,
+            "product_id": 591,
+            "vendor_id": 1452
+          },
+          "ignore": false,
+          "manipulate_caps_lock_led": true,
+          "simple_modifications": [
+            {
+              "from": {
+                "key_code": "left_control"
+              },
+              "to": [
+                {
+                  "apple_vendor_top_case_key_code": "keyboard_fn"
+                }
+              ]
+            },
+            {
+              "from": {
+                "key_code": "left_option"
+              },
+              "to": [
+                {
+                  "key_code": "left_control"
+                }
+              ]
+            },
+            {
+              "from": {
+                "key_code": "right_command"
+              },
+              "to": [
+                {
+                  "apple_vendor_top_case_key_code": "keyboard_fn"
+                }
+              ]
+            },
+            {
+              "from": {
+                "key_code": "caps_lock"
+              },
+              "to": [
+                {
+                  "key_code": "left_option"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "disable_built_in_keyboard_if_exists": false,
+          "fn_function_keys": [],
+          "identifiers": {
+            "is_keyboard": true,
+            "is_pointing_device": false,
+            "product_id": 833,
+            "vendor_id": 1452
+          },
+          "ignore": true,
+          "manipulate_caps_lock_led": true,
+          "simple_modifications": []
+        },
+        {
+          "disable_built_in_keyboard_if_exists": false,
+          "fn_function_keys": [],
+          "identifiers": {
+            "is_keyboard": true,
+            "is_pointing_device": false,
+            "product_id": 34304,
+            "vendor_id": 1452
+          },
+          "ignore": true,
+          "manipulate_caps_lock_led": true,
+          "simple_modifications": []
+        }
+      ],
+      "fn_function_keys": [
+        {
+          "from": {
+            "key_code": "f1"
+          },
+          "to": [
+            {
+              "consumer_key_code": "display_brightness_decrement"
+            }
+          ]
+        },
+        {
+          "from": {
+            "key_code": "f2"
+          },
+          "to": [
+            {
+              "consumer_key_code": "display_brightness_increment"
+            }
+          ]
+        },
+        {
+          "from": {
+            "key_code": "f3"
+          },
+          "to": [
+            {
+              "apple_vendor_keyboard_key_code": "mission_control"
+            }
+          ]
+        },
+        {
+          "from": {
+            "key_code": "f4"
+          },
+          "to": [
+            {
+              "apple_vendor_keyboard_key_code": "spotlight"
+            }
+          ]
+        },
+        {
+          "from": {
+            "key_code": "f5"
+          },
+          "to": [
+            {
+              "consumer_key_code": "dictation"
+            }
+          ]
+        },
+        {
+          "from": {
+            "key_code": "f6"
+          },
+          "to": [
+            {
+              "key_code": "f6"
+            }
+          ]
+        },
+        {
+          "from": {
+            "key_code": "f7"
+          },
+          "to": [
+            {
+              "consumer_key_code": "rewind"
+            }
+          ]
+        },
+        {
+          "from": {
+            "key_code": "f8"
+          },
+          "to": [
+            {
+              "consumer_key_code": "play_or_pause"
+            }
+          ]
+        },
+        {
+          "from": {
+            "key_code": "f9"
+          },
+          "to": [
+            {
+              "consumer_key_code": "fast_forward"
+            }
+          ]
+        },
+        {
+          "from": {
+            "key_code": "f10"
+          },
+          "to": [
+            {
+              "consumer_key_code": "mute"
+            }
+          ]
+        },
+        {
+          "from": {
+            "key_code": "f11"
+          },
+          "to": [
+            {
+              "consumer_key_code": "volume_decrement"
+            }
+          ]
+        },
+        {
+          "from": {
+            "key_code": "f12"
+          },
+          "to": [
+            {
+              "consumer_key_code": "volume_increment"
+            }
+          ]
+        }
+      ],
+      "name": "Default profile",
+      "parameters": {
+        "delay_milliseconds_before_open_device": 1000
+      },
+      "selected": true,
+      "simple_modifications": [],
+      "virtual_hid_keyboard": {
+        "country_code": 0,
+        "indicate_sticky_modifier_keys_state": true,
+        "mouse_key_xy_scale": 100
+      }
+    }
+  ]
+}
